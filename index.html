@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <style>
+   @import url('https://fonts.googleapis.com/css2?family=Allura&family=Great+Vibes&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+  }
+    body {
+      height: 100vh;
+      background: url("background1 (1).png") center / cover;
+    }
+    body > div {
+      width: 100%;
+      height: 100%;
+      border: 2px solid hwb(300 40% 25%);
+    }
+    .first-page {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background:
+        linear-gradient(
+      rgba(5, 4, 20, 0.3),
+      rgba(5, 4, 20, 0.65)
+    ),
+    url("background1 (1).png") center / cover ;
+
+  background-color: #080817;
+  color: white;
+      
+      }
+    .first-page .header {
+      width: 100%;
+      display: flex;
+      padding: 10px 5px;
+      font-size: 1.2rem;
+    }
+    .header h3 span {
+      color: gold;
+      margin: 0 5px;
+    }
+    .content {
+      margin-top: 10%; 
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .content > * {
+      margin: 20px;
+    }
+    .content .h1 {
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+    }
+    .content .h1 span {
+      display: inline-block;
+      font-size: 3.7rem;
+      font-width: bold;
+      transform: rotate(-3deg);
+    }
+    .content .h1 .first {
+      font-family: Great Vibes, sans-serif;
+      color: hwb(51 13% 11%);
+      text-shadow: 0  2px 12px hwb(51 33% 19%);
+    }
+    .content .h1 .second {
+      color: hwb(300 54% 14%);
+      text-shadow: 0  5px 12px hwb(300 59% 26%);
+      font-family: Allura, sans-serif;
+    }
+    #button {
+      width: 60%;
+      max-width: 200px;
+      padding: 10px 5px;
+      border-radius: 20px;
+      margin: 20px;
+      border: none;
+      background: linear-gradient(hwb(51 20% 9%), hwb(51 44% 13%), hwb(51 4% 44%));
+      box-shadow: 0 5px 12px #333;
+      transition: background 2s ease;
+    }
+    #button:hover {
+      background: linear-gradient(hwb(300 11% 10%), hwb(300 54% 20%), hwb(300 9% 38%));
+      box-shadow: 0 5px 12px #333;
+      transform: translateY(0);  
+    }
+    .surprise { 
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      padding: 10px 20px 30px;
+      background: url("fije.jpg") center / cover;
+    }
+    .memories {
+      display: flex;
+      flex-flow: column wrap;
+      align-items: center;
+      
+      padding: 0;
+      position: relative;
+    }
+    
+    .memories.first {
+      position: absolute;
+      transform: rotate(-5deg);
+    }
+    .surprise video {
+      width: 200px;
+      aspect-ratio: 1 / 2;
+    }
+    .surprise .back {
+      width: 95%;
+      display: flex;
+      padding: 10px 5px;
+      justify-content: flex-end;
+      position: absolute;
+      top: 0;
+      
+    }
+    .back button {
+      padding: 2px 5px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(hwb(51 20% 9%), hwb(51 44% 13%), hwb(51 4% 44%));
+      box-shadow: 4px 2px 12px #000;
+    }
+    .words {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(17px);
+      border: 2px solid gold;
+      padding: 10px 15px;
+      margin: 50px auto 100px;
+      border-radius: 10px 20px 15px 5px;
+      box-shadow: 0 5px 12px hwb(50 7% 9%);
+    }
+    .para p {
+      margin: 20px 0;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+    .words h1 {
+      font-family: Great Vibes, sans-serif;
+      margin: 10px;
+      transform: rotate(-5deg);
+      color: hwb(51 15% 11%);
+    }
+    .words h2 {
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+      color: hwb(300 29% 20%);
+      text-shadow: 3px 5px 5px #000;
+    }
+    .words h2 .first {
+      transform: rotate(-7deg);
+      font-size: 1.2rem;
+      font-family: Great Vibes, sans-serif;
+      letter-spacing: 1;
+    }
+
+    .words h2 .second {
+      transform: rotate(-3deg);
+      margin-left: 60px;
+      font-size: 1.1rem;
+      margin-top: 5px;
+      letter-spacing: 1;
+      font-family: Great Vibes, sans-serif"    
+    }
+    .loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .load {
+      border: 3px solid hwb(300 16% 21%);
+      height: auto;
+      padding: 5px;
+      display: flex;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0 5px 12px hwb(300 29% 22%);
+      background:  rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(17px);
+    }
+    .load img {
+      width: 130px;
+      aspect-ratio: 1 / 1;
+      border: none;
+      border-radius: 10px;
+      margin: 0;
+      animation: resize 3s ease-in-out infinite;
+    }
+    @keyframes resize {
+       from {
+         width: 130px;
+         aspect-ratio: 1 / 1;
+       }
+      55% {
+        width: 150px;
+        aspect-ratio: 1 / 1;
+      }
+      to {
+        width: 130px;
+        aspect-ratio: 1 / 1;
+      }
+    }
+  </style>
+  <title>bigsis Birthday</title>
+</head>
+<body>
+  <!-- loading animation -->
+  <div class="loading" hidden>
+    <div class="load">
+      <img src="loader.jpg" alt="">
+    </div>
+  </div>
+
+ <!-- first page -->
+  <div class="first-page" hidden>
+    <div class="header" role="header">
+      <h3><span>♡</span> Happy Birthday Sis</h3>
+      <p></p>
+    </div>
+
+    <div class="content">
+      <p>A Special Day For Someone Special</p>
+      <div class="h1">
+        <span class="first">Happy Birthday</span><br>
+        <span class="second">Big Sis ♡</span>
+      </div>
+      <p>You make life a brighter, kinder, and so much more  beautiful. Today is all about you!</p>
+    </div>
+    <button id="button">Open your surprise</button>
+    <p><i class="fa fa-calendar-o" aria-hidden="true"></i> October 24</p>
+  </div>
+
+    <!-- the suprise -->
+  <div class="surprise" >
+    <div class="back">
+      <button id="back">Back</button>
+    </div>
+        
+    <div class="words">
+      <h1>Dear Big Sis,</h1>
+     <div class="para">
+       <p>
+Today, we celebrate you — the amazing<br>
+woman you are, and everything you do.
+</p>
+      <p>
+You've been my guide, my support, and my<br>
+cheerleader. You always<br>
+show up, even when it's hard, and you do it<br>
+with so much love and strength.</p>
+<p>
+I'm so grateful to have you in my life. You<br>
+make the world a brighter place just by<br>
+being you.</p>
+<p>
+May your new year be filled with happiness,<br>
+blessings, success and all the dreams your<br>
+heart wishes for.
+</p>
+     </div>
+    <h2>
+      <span class="first">
+        You deserve all the good things
+in the world.
+      </span>
+
+  <span class="second">
+    Happy Birthday, Sis! ♡
+  </span>
+    </h2>
+    </div>
+  </div>
+  <script> 
+    const loading = document.querySelector(".loading")
+    const first = document.querySelector(".first-page")
+    const surprise = document.querySelector(".surprise")
+    const btn = document.getElementById("button")
+    const btn2 = document.getElementById("back")
+    const divs = document.querySelectorAll("body > div")
+    
+    document.addEventListener("DOMContentLoaded", () => {
+      divs.forEach((div) => div.hidden = true)
+      
+      loading.hidden = false
+      setTimeout(() => {
+        loading.hidden = true
+        first.hidden = false
+      }, 6000)
+      
+    btn.addEventListener("click", () => {
+      first.hidden = true
+      surprise.hidden = false
+    })
+    btn2.addEventListener("click", () => {
+      first.hidden = false
+      surprise.hidden = true
+    })
+    })
+  </script>
+</body>
+</html>
